@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+📚 Fastcampus - 한 번에 끝내는 React의 모든 것 초격차 패키지 Online.
+✌ Part 2. React 라이브러리
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ch 01. 라이브러리 기초
 
-## Available Scripts
+### 라이브러리 vs 프레임워크
+- 라이브러리는 개발 편의를 위한 도구의 모음
+- 프레임워크는 기반 구조까지 잡혀있음
+- 라이브러리는 "공구" // 프레임워크는 "공장"
 
-In the project directory, you can run:
+### 라이브러리 적용 과정
+- 필요 > 검색 > 사용법 파악 > 적용
 
-### `npm start`
+### Moment (time, date)
+- [https://momentjs.com/guides/](https://momentjs.com/guides/)
+- moment-timezone
+- format 및 비교 -> 원하는 스타일로 표기 가능
+- 오래되고 트렌드에 뒤쳐짐 (Mutable / Tree shaking X)
+- size 이슈 (사이즈가 큼 / 290kb)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dayjs
+- [https://day.js.org/](https://day.js.org/)
+- 용량 적음 (7kb) -> 가볍다 / 단 Tree shaking XX
+- 문서 정갈
+- 간단한 기능들을 적용할 때에 좋을 듯
+- 써보다가 필요한 기능이 추가로 있다면 다른 라이브러리 고려할만함
+- format 및 비교 -> 원하는 스타일로 표기 가능
+- plugin/timezone plugin/utc
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### date-fns
+- [https://date-fns.org/](https://date-fns.org/)
+- 커버리지가 제일 높은 라이브러리
+- Tree shaking 지원
+- funtional programming
+- 용량 88kb
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 라이브러리를 고르는 기준
+- 기능 / 성능 / 번들 사이즈 / tree shaking (안쓰는 기능은 빌드하지 않기)
+- 문서 가독성 / 인기(선호도) / 관리 상태(업데이트) / 관리 주체
+- 선호도 / 업데이트 : [https://npmtrends.com/](https://npmtrends.com/)
+- 성능 비교 : [https://github.com/you-dont-need/You-Dont-Need-Momentjs/blob/master/README.md](https://github.com/you-dont-need/You-Dont-Need-Momentjs/blob/master/README.md)
