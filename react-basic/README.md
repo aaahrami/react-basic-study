@@ -6,11 +6,13 @@
 
 ### createElement()
 
+```jsx
 React.createElement(
 	type,
 	[props],
 	[...children]
 )
+```
 
 ### 서버 실행
 - npm start
