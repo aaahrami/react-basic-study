@@ -1,5 +1,5 @@
-📚 Fastcampus - 한 번에 끝내는 React의 모든 것 초격차 패키지 Online.
-✌ Part 2. React 라이브러리
+📚 Fastcampus - 한 번에 끝내는 React의 모든 것 초격차 패키지 Online. <br />
+✌ Part 2. React 라이브러리 <br />
 
 ## Ch 01. 라이브러리 기초
 
