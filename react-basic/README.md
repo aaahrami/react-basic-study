@@ -1,4 +1,4 @@
-📚 Fastcampus - 한 번에 끝내는 React의 모든 것 초격차 패키지 Online.
+📚 Fastcampus - 한 번에 끝내는 React의 모든 것 초격차 패키지 Online. <br />
 ☝ Part 1. React 기초
 
 ### DOM 다루기 / Element 생성하기 정리
